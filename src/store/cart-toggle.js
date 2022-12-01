@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialToggleState = { isShown: false }
+const initialState = { isShown: false }
 
 const cartToggleSlice = createSlice({
     name: 'cart-toggle',
-    initialState: initialToggleState,
+    initialState,
     reducers: {
         toggle(state) {
             state.isShown = !state.isShown
